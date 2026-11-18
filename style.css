@@ -1,0 +1,70 @@
+:root {
+  --bg: #17121f;
+  --panel: #241c30;
+  --text: #f1eadb;
+  --muted: #b9ad98;
+  --accent: #e0b25a;
+  --link: #f0c878;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--link); }
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+header.site {
+  padding: 28px 0 12px;
+}
+header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+header.site .brand { font-size: 1.5rem; font-weight: 700; color: var(--accent); text-decoration: none; letter-spacing: .02em; }
+header.site nav a { margin-left: 18px; color: var(--muted); text-decoration: none; }
+header.site nav a:hover { color: var(--text); }
+
+.intro { padding: 24px 0 8px; color: var(--muted); max-width: 640px; }
+
+h1, h2, h3 { line-height: 1.25; }
+
+.games { display: grid; gap: 24px; padding: 16px 0 48px; }
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--panel);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.game .cover { aspect-ratio: 16 / 7; background-size: cover; background-position: center; }
+.game .body { display: flex; gap: 18px; padding: 20px; align-items: flex-start; }
+.game .icon { width: 84px; height: 84px; flex: none; border-radius: 18px; background: #00000040; object-fit: contain; }
+.game h2 { margin: 0 0 6px; font-size: 1.35rem; }
+.game p { margin: 0 0 14px; color: var(--muted); }
+.game .links { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.button {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #1d1626;
+  font-weight: 600;
+  text-decoration: none;
+}
+.button.ghost { background: transparent; color: var(--link); border: 1px solid #f0c87866; }
+
+.doc { max-width: 760px; padding: 16px 0 48px; }
+.doc h1 { margin-top: 8px; }
+.doc h2 { margin-top: 36px; color: var(--accent); font-size: 1.3rem; }
+.doc h3 { margin-top: 24px; font-size: 1.05rem; }
+.doc .updated { color: var(--muted); }
+
+footer.site { border-top: 1px solid #ffffff1a; padding: 20px 0 32px; color: var(--muted); font-size: .9rem; }
+footer.site a { color: var(--muted); }
