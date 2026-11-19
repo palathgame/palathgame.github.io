@@ -1,12 +1,12 @@
-# filiplukes.github.io
+# palathgame.github.io
 
-Web vývojáře PalathGame na GitHub Pages: https://filiplukes.github.io
+Web vývojáře PalathGame na GitHub Pages: https://palathgame.github.io
 
 - `app-ads.txt`: ověření AdMob. Musí zůstat přímo v kořeni repozitáře.
 - `index.html`: seznam her (karty s odkazem na stránku každé hry).
 - `games/<hra>/index.html`: samostatná stránka hry s popisem, obrázky, případně videem.
 - `privacy/index.html`: zásady ochrany osobních údajů pro všechny hry
-  (URL pro Google Play: https://filiplukes.github.io/privacy/).
+  (URL pro Google Play: https://palathgame.github.io/privacy/).
 
 ## Nová hra
 
